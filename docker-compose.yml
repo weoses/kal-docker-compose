@@ -90,9 +90,9 @@ services:
     image: ghcr.io/weoses/telegram-service:latest
     environment:
       MONGO_URI: $MONGO_URI
-      TELEGRAM_BOTTOKEN: $TELEGRAM_BOT_TOKEN
+      TELEGRAM_TOKEN: $TELEGRAM_TOKEN
     volumes:
-      - "./config/ocrservice:/app/config"
+      - "./config/telegramservice:/app/config"
     depends_on:
      - storage-service
     networks:
