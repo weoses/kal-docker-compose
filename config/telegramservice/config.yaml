@@ -1,0 +1,15 @@
+telegram:
+  BotToken: 
+
+mongo:
+  Uri: 
+  Database: memes
+
+inline:
+  PageSize: 20
+
+storage-service:
+  Uri: http://storage-service:7001
+
+user-account:
+  StaticUuid: f6a3e8a0-c3b8-45af-a2d3-7bbe2879e0e6

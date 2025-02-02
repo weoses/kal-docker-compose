@@ -1,0 +1,21 @@
+server:
+  ListenAddress: :7001
+
+image-storage:
+  S3:
+    Endpoint: 
+    AccessKey: 
+    SecretKey: 
+    Bucket: images
+
+
+ocr-service:
+  Uri: http://ocr-service:7002
+
+metadata-storage:
+  Elastic:
+    Addresses:
+      - "http://elasticsearch:9200/"
+    Username: 
+    Password: 
+  Index: image-metadata
